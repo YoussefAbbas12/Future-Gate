@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&family=Baloo+Bhaijaan+2:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    background-color: #000;
+    background: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_768/u_https://storage.googleapis.com/msgsndr/lSizdJ8vyamZcJjzWXNy/media/6953b7879e7c13189703b00a.webp") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.4;
+}
+
+section{
+    max-width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    margin-top: 120px;
+}
+
+.main-image{
+    position: relative;
+    max-width: 100%;
+    height: 70vh;
+    margin: auto;
+}
+.hero h1{
+  font-family: "Almarai", sans-serif;
+  color: #f6a437ff;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hero .main-image img{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: -83px;
+    left: 0;
+}
+
+.hero p{
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.btns span{
+    background-color: #f6a437ff;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 32px;
+    font-weight: 500;
+    width: 49%;
+}
+
+
+
+/* ================================================================================================= */
+
+.instractors-section {
+    margin-bottom: 100px;
+}
+.instractors-section h2{
+    color: #f6ad55;
+    font-size: 48px;
+}
+.instractors-section p{
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.instractors-section>img{
+    width: 200px;
+    height: auto;
+    animation: rolling 2s infinite;
+    animation-timing-function: ease-out;
+    transition: .2s;
+}
+
+.instractors-section .instractios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.instractors-section .instractios img{
+    width: 22%;
+    height: auto;
+    animation: rolling 2s infinite;
+    animation-timing-function: ease-out;
+    transition: .2s;
+}
+
+@keyframes rolling{
+    0% {
+    transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* =================================================================================================================== */
+
+.fields-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.fields-section .filed-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 48%;
+    gap: 10px;
+    text-align: left;
+}
+
+.fields-section .filed-card.programming{
+    align-self: flex-end;
+}
+
+.fields-section .filed-card.marketing{
+    align-self: flex-end;
+}
+
+.fields-section .filed-card img{
+    width: 160px;
+    height: auto;
+}
+.fields-section .filed-card h3{
+    font-size: 24px;
+    color: #f6ad55;
+    font-weight: 700;
+}
+.fields-section .filed-card p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+
+}
+
+/* =================================================================================================================== */
+
+.success{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.success h2{
+    color: #f6ad55;
+    font-size: 51px;
+}
+
+.success .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.success .images img{
+    width: 31%;
+    height: auto;
+}
+
+
+/* ================================================================================================= */
+
+.questions-section{
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+    font-family: Cairo;
+}
+.questions-section h2{
+    color: #f6a437ff;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.question{
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    height: 62px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.question.active{
+    height: 300px;
+}
+
+.questions {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.question h4{
+    margin: 7px 20px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 2;
+    color: #f6a437ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h4 i{
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.question .answer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 37px;
+}
+.question .answer img{
+    width: 200px;
+}
+
+
+
+/* ==================================================================================== */
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin-bottom: 100px;
+}
+
+.submit form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    border: 1px solid #FFFFFFFF;
+    border-radius: 3px;
+    padding: 60px 40px 30px 40px;
+    box-shadow: 0px 4px 4px 0px #57647e36;
+    width: 72%;
+}
+
+.submit form input{
+    background-color: #FFFFFFFF ;
+    color: #2c3345FF ;
+    border: 1px solid #ACACACFF ;
+    border-radius: 5px ;
+    padding: 8px 15px 8px 15px ;
+    font-family: 'cairo', sans-serif ;
+    font-size: 12px;
+    font-weight: 300;
+    background-clip: inherit ;
+}
+
+.submit form button{
+    background-color: #EB6E00FF;
+    border-radius: 5px;
+    padding: 9px 50px 9px 50px;
+    width: 100%;
+    color: #FFFFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+    height: 55px;
+}
+
+
+
+@media(max-width: 1000px){
+    .hero{
+        margin-top: 30px;
+    }
+
+    .hero .main-image img {
+        top: -30px;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_768/u_https://storage.googleapis.com/msgsndr/lSizdJ8vyamZcJjzWXNy/media/6953b7879e7c13189703b00a.webp")  no-repeat center center fixed;
+        background-size: cover;
+    }
+    .hero{
+        padding: 0 20px;
+    }
+    .hero .main-image{
+        height: 55vh;
+    }
+    .hero .main-image img {
+        top: 0;
+    }
+        .instractors-section .instractios {
+        margin-top: 20px;
+    }
+    .instractors-section .instractios img{
+        width: 80%;
+    }
+
+    .fields-section .filed-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .fields-section .filed-card img{
+        width: 90%;
+    }
+    .success .images img {
+        width: 88%;
+    }
+    .questions-section{
+        padding: 0 20px;
+    }
+    .question.active {
+        height: 375px;
+    }
+    .question .answer {
+        display: flex;
+        flex-direction: column;
+    }
+    .submit{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .submit form{
+        width: 100%;
+    }
+    .submit form button{
+        height: auto;
+    }
+
+    .question{
+        height: 55px;
+    }
+    .question h4 {
+        font-size: 20px;
+    }
+
+}
+@media(max-width: 550px){    
+    .hero .main-image img {
+        top: 55px;
+    }
+    
+}
+
+@media(max-width: 400px){    
+    .hero .main-image img {
+        top: 90px;
+    }
+    .hero .main-image{
+        height: 50vh;
+    }
+    .btns span {
+        width: 100%;
+    }
+}
